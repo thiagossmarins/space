@@ -1,0 +1,24 @@
+#visao {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 62.62%), url('./assets/ilustracao-img/planet-earth-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+}
+
+.checklist {
+    list-style-type: none;
+}
+
+.checklist li::before {
+    content: "\2713";
+    display: inline-block;
+    width: 16px;
+    margin-left: -20px;
+    margin-right: 5px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, cyan, indigo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
